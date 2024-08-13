@@ -1,4 +1,82 @@
-#main-div{
-    background-color: pink;
-    
+
+
+@font-face {
+  font-family: "digital";
+  src: url(fonts/DIGITAL-7.TTF);
+}
+
+#outer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+#inner-div {
+  padding: 20px;
+  background-color: #071952;
+  border-radius: 30px;
+}
+#icons i {
+  margin: 3px;
+}
+#buttons {
+  background-color: #37b7c3;
+  border: 0px;
+  margin: 3px;
+  width: 60px;
+  color: #ebf4f6;
+  font-style: italic;
+  font-weight: 800;
+  font-size: large;
+  box-shadow: 2px 2px 4px 1px rgba(255, 255, 255, 0.582);
+}
+#row-1 {
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+input {
+  height: 100px;
+  margin-top: 10px;
+  background-color: #ebf4f6;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 70px;
+  font-family: "digital";
+  text-align: right;
+}
+img {
+  width: 150px;
+}
+#sci-buttons {
+  width: 70px;
+  background-color: #37b7c3;
+  border: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 3px;
+  height: 30px;
+  padding: 0px;
+  color: #ebf4f6;
+  font-style: italic;
+  font-size: large;
+  font-weight: 800;
+}
+#replay-btn{
+  background-color: #37b7c3;
+  width: 130px;
+  height: 110px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border-bottom-left-radius: 350px;
+  border-bottom-right-radius: 350px;
+  font-style: italic;
+  font-size: large;
+  font-weight: 800;
+  color: #ebf4f6;
+  
+}
+
+#sci-row-1{
+  display: flex;
+  justify-content: space-between;
 }
