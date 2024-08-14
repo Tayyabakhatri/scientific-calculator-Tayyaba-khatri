@@ -17,54 +17,58 @@
 </head>
 
 <body>
+  <button onclick="normalCal ()">Normal Calculator</button>
+  <button onclick="sciCal ()">Scientific Calculator</button>
   <div id="outer-div">
     <div class="card" style="width: 28rem" id="inner-div">
       <img src="images/png-clipart-casio-f-91w-g-shock-watch-pro-trek-watch-electronics-text-removebg-preview.png"
         alt="">
-      <input type="text " />
+      <input type="text " id="data" onclick="input (this)" />
       <div class="card-body">
         <h5 class="card-title" id="icons">
-          <i class="fa-solid fa-volume-off fa-xl" style="color: #088395"></i>
-          <i class="fa-solid fa-volume-high fa-xl" style="color: #088395"></i>
+          <i class="fa-solid fa-volume-off fa-xl" id="volume-off" style="color: #088395"></i>
+          <i class="fa-solid fa-volume-high fa-xl" id="volume-on"  style="color: #088395"></i>
         </h5>
         <p class="card-text" id="c">
+          <button type="button"  class="btn text-white bg-success " id="on" onclick="on()" >ON</button>
+          <button type="button"  class="btn text-white bg-danger" id="off" onclick="off()" >OFF</button>
         <div class="row row-cols-5  " id="row-1">
 
 
-          <button type="button" class="btn " id="buttons">7</button>
-          <button type="button" class="btn " id="buttons">8</button>
-          <button type="button" class=" btn" id="buttons">9</button>
-          <button type="button" class="btn" id="buttons">Del</button>
-          <button type="button" class="btn" id="buttons">AC</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">7</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">8</button>
+          <button type="button" class=" btn" id="buttons" onclick="input (this)">9</button>
+          <button type="button" class="btn" id="buttons" onclick="clear()">AC</button>
+          <button type="button" class="btn" id="buttons" onclick="del()">Del</button>
 
 
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn" id="buttons">4</button>
-          <button type="button" class="btn" id="buttons">5</button>
-          <button type="button" class="btn " id="buttons">6</button>
-          <button type="button" class="btn" id="buttons">*</button>
-          <button type="button" class="btn" id="buttons">/</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">4</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">5</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">6</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">*</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">/</button>
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn " id="buttons">1</button>
-          <button type="button" class="btn " id="buttons">2</button>
-          <button type="button" class="btn " id="buttons">3</button>
-          <button type="button" class="btn" id="buttons">+</button>
-          <button type="button" class="btn" id="buttons">-</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">1</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">2</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">3</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">+</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">-</button>
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn " id="buttons">0</button>
-          <button type="button" class="btn " id="buttons">.</button>
-          <button type="button" class="btn " id="buttons">EXP</button>
-          <button type="button" class="btn" id="buttons">Ans</button>
-          <button type="button" class="btn" id="buttons">=</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">0</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">.</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">EXP</button>
+          <button type="button" class="btn" id="buttons" id="ans" onclick="aNS ()" >Ans</button>
+          <button type="button" class="btn" id="buttons" onclick="result ()">=</button>
         </div>
         </p>
       </div>
     </div>
   </div>
-  <div id="outer-div">
+  <div id="outer-div-2" >
     <div class="card" style="width: 35rem" id="inner-div">
       <img src="images/png-clipart-casio-f-91w-g-shock-watch-pro-trek-watch-electronics-text-removebg-preview.png"
         alt="">
@@ -84,18 +88,18 @@
           <button type="button" class="btn " id="sci-buttons">nCr</button>
 
         </div>
-       
+
 
         </p>
         <p class="card-text" id="c">
-          <div class="row " id="sci-row-1">
+        <div class="row " id="sci-row-1">
 
-            <button type="button" class="btn " id="sci-buttons">sin</button>
-            <button type="button" class="btn " id="sci-buttons">cos</button>
-            <button type="button" class="btn " id="sci-buttons">tan</button>
-            <button type="button" class="btn " id="sci-buttons">log<sup>-1</sup></sup></button>
-            <button type="button" class="btn " id="sci-buttons">nCr</button>
-          </div>
+          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">sin</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">cos</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">tan</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">log<sup>-1</sup></sup></button>
+          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">nCr</button>
+        </div>
         </p>
 
       </div>

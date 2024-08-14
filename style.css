@@ -11,6 +11,13 @@
   align-items: center;
   height: 700px;
 }
+#outer-div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  display: none;
+}
 #inner-div {
   padding: 20px;
   background-color: #071952;
