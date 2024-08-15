@@ -27,56 +27,62 @@
       <div class="card-body">
         <h5 class="card-title" id="icons">
           <i class="fa-solid fa-volume-off fa-xl" id="volume-off" style="color: #088395"></i>
-          <i class="fa-solid fa-volume-high fa-xl" id="volume-on"  style="color: #088395"></i>
+          <i class="fa-solid fa-volume-high fa-xl" id="volume-on" style="color: #088395"></i>
         </h5>
         <p class="card-text" id="c">
-          <button type="button"  class="btn text-white bg-success " id="on" onclick="on()" >ON</button>
-          <button type="button"  class="btn text-white bg-danger" id="off" onclick="off()" >OFF</button>
+          <button type="button" class="btn text-white bg-success " id="on" onclick="on()">ON</button>
+          <button type="button" class="btn text-white bg-danger" id="off" onclick="off()">OFF</button>
         <div class="row row-cols-5  " id="row-1">
 
 
-          <button type="button" class="btn " id="buttons" onclick="input (this)">7</button>
-          <button type="button" class="btn " id="buttons" onclick="input (this)">8</button>
-          <button type="button" class=" btn" id="buttons" onclick="input (this)">9</button>
-          <button type="button" class="btn" id="buttons" onclick="clear()">AC</button>
-          <button type="button" class="btn" id="buttons" onclick="del()">Del</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">7</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">8</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">9</button>
+          <button type="button" class="btn" class="buttons" onclick="clear()">AC</button>
+          <button type="button" class="btn" class="buttons" onclick="del()">Del</button>
 
 
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn" id="buttons" onclick="input (this)">4</button>
-          <button type="button" class="btn" id="buttons" onclick="input (this)">5</button>
-          <button type="button" class="btn " id="buttons" onclick="input (this)">6</button>
-          <button type="button" class="btn" id="buttons" onclick="input (this)">*</button>
-          <button type="button" class="btn" id="buttons" onclick="input (this)">/</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">4</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">5</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">6</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">*</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">/</button>
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn " id="buttons" onclick="input (this)">1</button>
-          <button type="button" class="btn " id="buttons" onclick="input (this)">2</button>
-          <button type="button" class="btn " id="buttons" onclick="input (this)">3</button>
-          <button type="button" class="btn" id="buttons" onclick="input (this)">+</button>
-          <button type="button" class="btn" id="buttons" onclick="input (this)">-</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">1</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">2</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">3</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">+</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">-</button>
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn " id="buttons" onclick="input (this)">0</button>
-          <button type="button" class="btn " id="buttons" onclick="input (this)">.</button>
-          <button type="button" class="btn " id="buttons" onclick="input (this)">EXP</button>
-          <button type="button" class="btn" id="buttons" id="ans" onclick="aNS ()" >Ans</button>
-          <button type="button" class="btn" id="buttons" onclick="result ()">=</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">0</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">.</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">EXP</button>
+          <button type="button" class="btn" class="buttons" id="ans" onclick="aNS ()">Ans</button>
+          <button type="button" class="btn" class="buttons" onclick="result ()">=</button>
         </div>
         </p>
       </div>
     </div>
   </div>
-  <div id="outer-div-2" >
+
+
+
+
+
+
+  <div id="outer-div-2">
     <div class="card" style="width: 35rem" id="inner-div">
       <img src="images/png-clipart-casio-f-91w-g-shock-watch-pro-trek-watch-electronics-text-removebg-preview.png"
         alt="">
-      <input type="text " />
+      <input type="text " id="sci-data" onclick="sciInput(this)" />
       <div class="card-body">
-        <h5 class="card-title" id="icons">
-          <i class="fa-solid fa-volume-off fa-xl" style="color: #088395"></i>
-          <i class="fa-solid fa-volume-high fa-xl" style="color: #088395"></i>
+        <h5 class="card-title" id="icons2">
+          <i class="fa-solid fa-volume-off fa-xl" id="volume-off-2" style="color: #088395"></i>
+          <i class="fa-solid fa-volume-high fa-xl" id="volume-on-2" style="color: #088395"></i>
         </h5>
         <p class="card-text" id="c">
         <div class="row  " id="sci-row-1">
@@ -84,8 +90,8 @@
           <button type="button" class="btn " id="sci-buttons">alpha</button>
 
           <button type="button" class="btn " id="replay-btn">Replay</button>
-          <button type="button" class="btn " id="sci-buttons">x<sup>-1</sup></sup></button>
-          <button type="button" class="btn " id="sci-buttons">nCr</button>
+          <button type="button" class="btn " class="sci-buttons">x<sup>-1</sup></sup></button>
+          <button type="button" class="btn " class="sci-buttons">nCr</button>
 
         </div>
 
@@ -94,11 +100,42 @@
         <p class="card-text" id="c">
         <div class="row " id="sci-row-1">
 
-          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">sin</button>
-          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">cos</button>
-          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">tan</button>
-          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">log<sup>-1</sup></sup></button>
-          <button type="button" class="btn " id="sci-buttons" onclick="input (this)">nCr</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="sin ()" ;
+            onclick="sciInput(this)">sin</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="tan()">tan</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="cos ()">cos</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="log()">log</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="sciInput(this)">nCr</button>
+        </div>
+        <div class="row " id="sci-row-1">
+
+          <button type="button" class="btn " class="sci-buttons" onclick="sciInput(this)">(</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="sciInput(this)">)</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="addMemory()">M+</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="subMemory()">M-</button>
+          <button type="button" class="btn " class="sci-buttons" onclick="clrMemory()">Mc</button>
+        </div>
+        <div class="row" id="sci-row-1">
+          <button type="button" class="btn " class="buttons" onclick="sciInput (this)">7</button>
+          <button type="button" class="btn " class="buttons" onclick="sciInput (this)">8</button>
+          <button type="button" class=" btn" class="buttons" onclick="sciInput (this)">9</button>
+          <button type="button" class="btn" class="buttons" onclick="clear2()">AC</button>
+          <button type="button" class="btn" class="buttons" onclick="scidel()">Del</button>
+        </div>
+        <div class="row" id="sci-row-1">
+          <button type="button" class="btn" class="buttons" onclick="input (this)">4</button>
+          <button type="button" class="btn" class="buttons" onclick="input (this)">5</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">6</button>
+          <button type="button" class="btn" class="buttons" id="ans" onclick="aNS ()">Ans</button>
+          <button type="button" class="btn" class="buttons" onclick="result ()">=</button>
+        </div>
+        <div class="row" id="sci-row-1">
+          <button type="button" class="btn " class="buttons" onclick="input (this)">1</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">2</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">3</button>
+          <button type="button" class="btn " class="buttons" onclick="input (this)">0</button>
+
+          <button type="button" class="btn " id="buttons" onclick="input (this)">.</button>
         </div>
         </p>
 
