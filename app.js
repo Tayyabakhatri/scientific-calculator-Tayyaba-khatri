@@ -46,13 +46,13 @@
 //     })
 // }
 function sciCal() {
-  document.getElementById("outer-div-2").style.display = "block"
-  document.getElementById("outer-div").style.display = "none"
+  document.getElementById("outer-div-2").style.display = "block";
+  document.getElementById("outer-div").style.display = "none";
 }
-function normalCal() {
-  document.getElementById("outer-div-2").style.diplay = "none"
-  document.getElementById("outer-div").style.display = "block";
 
+function normalCal() {
+  document.getElementById("outer-div-2").style.display = "none";
+  document.getElementById("outer-div").style.display = "block";
 }
 
 
@@ -155,6 +155,7 @@ function sciInput(num) {
   inputData.value += inputValue
 
 }
+
 function sin() {
   var input = document.getElementById("sci-data")
   var currentValue = input.value
@@ -194,18 +195,150 @@ function clear2() {
 
 var memory = 0;
 function addMemory() {
-  var currentValue = parseFloat(document.getElementById("sci-data"));
-  var val = currentValue.value;
-  memory += val;
-  currentValue.value = memory;
-}
-function subMemory() {
-  var currentValue = parseFloat(document.getElementById("sci-data"));
-  var val = currentValue.value;
-  memory -= val;
-  val = memory;
-}
-function clrMemory() {
-  memory = 0
+  var currentValue = parseFloat(document.getElementById("sci-data").value);
+  memory += currentValue;
+  document.getElementById("sci-data").value = memory;
 }
 
+function subMemory() {
+  var currentValue = parseFloat(document.getElementById("sci-data").value);
+  memory -= currentValue;
+  document.getElementById("sci-data").value = memory;
+}
+function clrMemory() {
+  document.getElementById("sci-data").value = "";
+  memory = 0;
+}
+
+function result2() {
+  var inputData = document.getElementById("sci-data")
+  var value = inputData.value
+  var result = eval(value)
+  inputData.value = result
+
+}
+function aNS2() {
+  result2()
+}
+function sqrt() {
+  var inputData = document.getElementById("sci-data")
+
+  var root = Math.sqrt(inputData.value)
+  inputData.value = root
+}
+
+// var operatorpressed = false
+// document.getElementById("multiple").addEventListener("click", () => {
+//   if (!operatorpressed) {
+//     operatorpressed =false
+//   }
+// })
+
+// document.getElementById("divide").addEventListener("click",()=>{
+//   if (!operatorpressed) {
+//     operatorpressed = true
+//   }
+// })
+// document.getElementById("add").addEventListener("click",()=>{
+//   if (!operatorpressed) {
+//     operatorpressed = true
+//   }
+// })
+// document.getElementById("sub").addEventListener("click",()=>{
+//   if (!operatorpressed) {
+//     operatorpressed = true
+//   }
+// })
+
+// console.dir(window.document.body.textContent)
+
+
+
+
+
+
+// function sciInput(num) {
+//   var inputValue = num.innerText;
+//   var inputData = document.getElementById("sci-data");
+//   inputData.value += inputValue;
+// }
+
+// function sin() {
+//   var input = document.getElementById("sci-data");
+//   var currentValue = input.value;
+//   var newValue = Math.sin(currentValue);
+//   input.value = newValue;
+// }
+
+// function cos() {
+//   var input = document.getElementById("sci-data");
+//   var currentValue = input.value;
+//   var newValue = Math.cos(currentValue);
+//   input.value = newValue;
+// }
+
+// function tan() {
+//   var input = document.getElementById("sci-data");
+//   var currentValue = input.value;
+//   var newValue = Math.tan(currentValue);
+//   input.value = newValue;
+// }
+
+// function log() {
+//   var input = document.getElementById("sci-data");
+//   var currentValue = input.value;
+//   var newValue = Math.log(currentValue);
+//   input.value = newValue;
+// }
+
+// function scidel() {
+//   var inputData = document.getElementById("sci-data");
+//   var currentValue = inputData.value;
+//   var newValue = currentValue.slice(0, -1);
+//   inputData.value = newValue;
+// }
+
+// function clear2() {
+//   var input = document.getElementById("sci-data");
+//   input.value = "";
+// }
+
+var memory = 0;
+
+// function addMemory() {
+//   var currentValue = parseFloat(document.getElementById("sci-data").value);
+//   memory += currentValue;
+//   document.getElementById("sci-data").value = memory;
+// }
+
+// function subMemory() {
+//   var currentValue = parseFloat(document.getElementById("sci-data").value);
+//   memory -= currentValue;
+//   document.getElementById("sci-data").value = memory;
+// }
+
+// function clrMemory() {
+//   document.getElementById("sci-data").value = "";
+//   memory = 0;
+// }
+
+function result2() {
+  var inputData = document.getElementById("sci-data");
+  var value = inputData.value;
+  try {
+    var result = eval(value);
+    inputData.value = result;
+  } catch (e) {
+    inputData.value = "Error";
+  }
+}
+
+// function aNS2() {
+//   result2();
+// }
+
+// function sqrt() {
+//   var inputData = document.getElementById("sci-data");
+//   var root = Math.sqrt(inputData.value);
+//   inputData.value = root;
+// }

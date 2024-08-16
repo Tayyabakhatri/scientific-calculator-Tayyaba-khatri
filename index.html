@@ -35,34 +35,34 @@
         <div class="row row-cols-5  " id="row-1">
 
 
-          <button type="button" class="btn " class="buttons" onclick="input (this)">7</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">8</button>
-          <button type="button" class="btn" class="buttons" onclick="input (this)">9</button>
-          <button type="button" class="btn" class="buttons" onclick="clear()">AC</button>
-          <button type="button" class="btn" class="buttons" onclick="del()">Del</button>
+          <button type="button" class="btn "  id="buttons" onclick="input (this)">7</button>
+          <button type="button" class="btn "  id="buttons" onclick="input (this)">8</button>
+          <button type="button" class="btn"  id="buttons" onclick="input (this)">9</button>
+          <button type="button" class="btn" id="buttons" onclick="clear()">AC</button>
+          <button type="button" class="btn" id="buttons" onclick="del()">Del</button>
 
 
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn" class="buttons" onclick="input (this)">4</button>
-          <button type="button" class="btn" class="buttons" onclick="input (this)">5</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">6</button>
-          <button type="button" class="btn" class="buttons" onclick="input (this)">*</button>
-          <button type="button" class="btn" class="buttons" onclick="input (this)">/</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">4</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">5</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">6</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">*</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">/</button>
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn " class="buttons" onclick="input (this)">1</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">2</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">3</button>
-          <button type="button" class="btn" class="buttons" onclick="input (this)">+</button>
-          <button type="button" class="btn" class="buttons" onclick="input (this)">-</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">1</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">2</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">3</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">+</button>
+          <button type="button" class="btn" id="buttons" onclick="input (this)">-</button>
         </div>
         <div class="row row-cols-5" id="row-1">
-          <button type="button" class="btn " class="buttons" onclick="input (this)">0</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">.</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">EXP</button>
-          <button type="button" class="btn" class="buttons" id="ans" onclick="aNS ()">Ans</button>
-          <button type="button" class="btn" class="buttons" onclick="result ()">=</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">0</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">.</button>
+          <button type="button" class="btn " id="buttons" onclick="input (this)">EXP</button>
+          <button type="button" class="btn" id="buttons" id="ans" onclick="aNS ()">Ans</button>
+          <button type="button" class="btn" id="buttons" onclick="result ()">=</button>
         </div>
         </p>
       </div>
@@ -86,12 +86,12 @@
         </h5>
         <p class="card-text" id="c">
         <div class="row  " id="sci-row-1">
-          <button type="button" class="btn " id="sci-buttons">shift</button>
+          <!-- <button type="button" class="btn " id="sci-buttons">shift</button>
           <button type="button" class="btn " id="sci-buttons">alpha</button>
 
           <button type="button" class="btn " id="replay-btn">Replay</button>
-          <button type="button" class="btn " class="sci-buttons">x<sup>-1</sup></sup></button>
-          <button type="button" class="btn " class="sci-buttons">nCr</button>
+          <button type="button" class="btn " id="sci-buttons">x<sup>-1</sup></sup></button>
+          <button type="button" class="btn " id="sci-buttons">nCr</button> -->
 
         </div>
 
@@ -102,40 +102,47 @@
 
           <button type="button" class="btn " class="sci-buttons" onclick="sin ()" ;
             onclick="sciInput(this)">sin</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="tan()">tan</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="cos ()">cos</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="log()">log</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="sciInput(this)">nCr</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="tan()">tan</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="cos ()">cos</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="log()">log</button>
+          <button type="button" class="btn " id="sci-buttons"  onclick ="sqrt()">sqr</button>
         </div>
         <div class="row " id="sci-row-1">
 
-          <button type="button" class="btn " class="sci-buttons" onclick="sciInput(this)">(</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="sciInput(this)">)</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="addMemory()">M+</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="subMemory()">M-</button>
-          <button type="button" class="btn " class="sci-buttons" onclick="clrMemory()">Mc</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="sciInput(this)">(</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="sciInput(this)">)</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="addMemory()">M+</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="subMemory()">M-</button>
+          <button type="button" class="btn " id="sci-buttons" onclick="clrMemory()">Mc</button>
         </div>
         <div class="row" id="sci-row-1">
-          <button type="button" class="btn " class="buttons" onclick="sciInput (this)">7</button>
-          <button type="button" class="btn " class="buttons" onclick="sciInput (this)">8</button>
-          <button type="button" class=" btn" class="buttons" onclick="sciInput (this)">9</button>
-          <button type="button" class="btn" class="buttons" onclick="clear2()">AC</button>
-          <button type="button" class="btn" class="buttons" onclick="scidel()">Del</button>
-        </div>
-        <div class="row" id="sci-row-1">
-          <button type="button" class="btn" class="buttons" onclick="input (this)">4</button>
-          <button type="button" class="btn" class="buttons" onclick="input (this)">5</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">6</button>
-          <button type="button" class="btn" class="buttons" id="ans" onclick="aNS ()">Ans</button>
-          <button type="button" class="btn" class="buttons" onclick="result ()">=</button>
-        </div>
-        <div class="row" id="sci-row-1">
-          <button type="button" class="btn " class="buttons" onclick="input (this)">1</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">2</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">3</button>
-          <button type="button" class="btn " class="buttons" onclick="input (this)">0</button>
+          <button type="button" class="btn "  id="buttons" onclick="sciInput (this)">7</button>
+          <button type="button" class="btn "  id="buttons" onclick="sciInput (this)">8</button>
+          <button type="button" class="btn"  id="buttons" onclick="sciInput (this)">9</button>
+          <button type="button" class="btn" id="buttons" onclick="clear2()">AC</button>
+          <button type="button" class="btn" id="buttons" onclick="scidel()">Del</button>
 
-          <button type="button" class="btn " id="buttons" onclick="input (this)">.</button>
+        </div>
+        <div class="row" id="sci-row-1">
+          <button type="button" class="btn" id="buttons" onclick="sciInput (this)">4</button>
+          <button type="button" class="btn" id="buttons" onclick="sciInput (this)">5</button>
+          <button type="button" class="btn " id="buttons" onclick="sciInput (this)">6</button>
+          <button type="button" class="btn" id="buttons" id="multiple" onclick="sciInput (this)">*</button>
+          <button type="button" class="btn" id="buttons" id="divide" onclick="sciInput (this)">/</button>
+        </div>
+        <div class="row" id="sci-row-1">
+          <button type="button" class="btn " id="buttons" onclick="sciInput (this)">1</button>
+          <button type="button" class="btn " id="buttons" onclick="sciInput (this)">2</button>
+          <button type="button" class="btn " id="buttons" onclick="sciInput (this)">3</button>
+          <button type="button" class="btn" id="buttons" id="add" onclick="sciInput (this)">+</button>
+          <button type="button" class="btn" id="buttons" id="sub" onclick="sciInput (this)">-</button>
+        </div>
+        <div id="sci-row-1" class="row">
+          <button type="button" class="btn " id="buttons" onclick="sciInput (this)">0</button>
+          <button type="button" class="btn " id="buttons" onclick="sciInput (this)">.</button>
+          <button type="button" class="btn " id="buttons" onclick="sciInput (this)">EXP</button>
+          <button type="button" class="btn" id="buttons" id="ans" onclick="aNS2()">Ans</button>
+          <button type="button" class="btn" id="buttons" onclick="result2()">=</button>
         </div>
         </p>
 
@@ -145,6 +152,13 @@
 
 
 
+
+
+
+
+
+
+  
 
   <script src="app.js"></script>
 </body>
