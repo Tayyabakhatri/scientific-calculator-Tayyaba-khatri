@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   height: 700px;
-  display: block;
+  
 }
 
 #outer-div-2 {
@@ -16,7 +16,6 @@
   justify-content: center;
   align-items: center;
   height: 700px;
-  display: none;
 }
 
 #inner-div {
@@ -24,6 +23,16 @@
   background-color: #071952;
   border-radius: 30px;
  
+}
+#button-div{
+  display: flex;
+  justify-content: center;
+}
+#button-div button{
+  border: 1px solid blue;
+border-radius: 18px;
+font-size: larger;
+margin-top: 20px;
 }
 
 #icons i {

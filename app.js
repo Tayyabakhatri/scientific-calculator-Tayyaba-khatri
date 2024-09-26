@@ -7,12 +7,12 @@
 //         isCalculatorOn=true
 //         document.getElementById("off").disabled=true
 //     })
-//     function input(num) {
-//         var inputValue = num.innerText
-//         var inputData = document.getElementById("data")
-//         inputData.value += inputValue
+function input(num) {
+  var inputValue = num.innerText
+  var inputData = document.getElementById("data")
+  inputData.value += inputValue
 
-//     }
+}
 //     function result() {
 //         var inputData = document.getElementById("data")
 //         var value = inputData.value
@@ -21,15 +21,15 @@
 
 //     }
 
-//     function aNS() {
-//         result()
-//     }
+function aNS() {
+  result()
+}
 
 
-//     function clear() {
+function clear() {
 
-//         document.getElementById("data").value = "";
-//     }
+  document.getElementById("data").value = "";
+}
 //     function del() {
 //         var inputData = document.getElementById("data")
 //         var currentValue = inputData.value
@@ -37,17 +37,18 @@
 //         inputData.value = newValue
 //     }
 
-// }
-// function off(){
-//     document.getElementById("off").addEventListener("click",()=>{
-//         isCalculatorOn=false
-//         document.getElementById("on").disabled=false 
-//         document.getElementById("off").disabled=true
-//     })
-// }
+function off() {
+  document.getElementById("off").addEventListener("click", () => {
+    isCalculatorOn = false
+    document.getElementById("on").disabled = false
+    document.getElementById("off").disabled = true
+  })
+}
 function sciCal() {
-  document.getElementById("outer-div-2").style.display = "block";
   document.getElementById("outer-div").style.display = "none";
+  document.getElementById("outer-div-2").style.display = "block";
+
+
 }
 
 function normalCal() {
