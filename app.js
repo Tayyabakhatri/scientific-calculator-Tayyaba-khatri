@@ -1,25 +1,13 @@
 
+document.getElementById("on").addEventListener("click", () => {
 
-// var  isCalculatorOn = false 
-// function on(){
-
-//     document.getElementById("on").addEventListener("click",()=>{
-//         isCalculatorOn=true
-//         document.getElementById("off").disabled=true
-//     })
+})
 function input(num) {
   var inputValue = num.innerText
   var inputData = document.getElementById("data")
   inputData.value += inputValue
 
 }
-//     function result() {
-//         var inputData = document.getElementById("data")
-//         var value = inputData.value
-//         var result = eval(value)
-//         inputData.value = result
-
-//     }
 
 function aNS() {
   result()
@@ -30,12 +18,7 @@ function clear() {
 
   document.getElementById("data").value = "";
 }
-//     function del() {
-//         var inputData = document.getElementById("data")
-//         var currentValue = inputData.value
-//         var newValue = currentValue.slice(0, -1)
-//         inputData.value = newValue
-//     }
+
 
 function off() {
   document.getElementById("off").addEventListener("click", () => {
@@ -44,20 +27,16 @@ function off() {
     document.getElementById("off").disabled = true
   })
 }
+//visible not visible
 function sciCal() {
   document.getElementById("outer-div").style.display = "none";
   document.getElementById("outer-div-2").style.display = "block";
-
-
 }
-
 function normalCal() {
   document.getElementById("outer-div-2").style.display = "none";
   document.getElementById("outer-div").style.display = "block";
 }
-
-
-
+//speak functionality
 function speak(text) {
   if (isReadAloudEnable) {
     const speech = new SpeechSynthesisUtterance(text);
@@ -110,14 +89,14 @@ volumeOffIcon2.addEventListener("click", () => {
   volumeOnIcon2.style.color = "#67656a";
 });
 
-
+// displaying outputs
 function input(num) {
   var inputValue = num.innerText
   var inputData = document.getElementById("data")
   inputData.value += inputValue
 
 }
-
+//showing results
 function result() {
   var inputData = document.getElementById("data")
   var value = inputData.value
@@ -125,75 +104,71 @@ function result() {
   inputData.value = result
 
 }
-
+//same 
 function aNS() {
   result()
 }
-
-
+//clear all 
 function clear() {
-
   var input = document.getElementById("data")
-
   input.value = ""
 }
+//delete funtionality
 function del() {
   var inputData = document.getElementById("data")
   var currentValue = inputData.value
   var newValue = currentValue.slice(0, -1)
   inputData.value = newValue
 }
-
-
-
 //scientific calculator
-
-
-
 function sciInput(num) {
   var inputValue = num.innerText
   var inputData = document.getElementById("sci-data")
   inputData.value += inputValue
-
 }
-
+//sin funtionality
 function sin() {
   var input = document.getElementById("sci-data")
   var currentValue = input.value
   var newValue = Math.sin(currentValue)
   input.value = newValue
 }
+//cos functionality
 function cos() {
   var input = document.getElementById("sci-data")
   var currentValue = input.value
   var newValue = Math.cos(currentValue)
   input.value = newValue
 }
+//tan functionality
 function tan() {
   var input = document.getElementById("sci-data")
   var currentValue = input.value
   var newValue = Math.tan(currentValue)
   input.value = newValue
 }
+//log functionality
 function log() {
   var input = document.getElementById("sci-data")
   var currentValue = input.value
   var newValue = Math.log(currentValue)
   input.value = newValue
 }
+//delete
 function scidel() {
   var inputData = document.getElementById("sci-data")
   var currentValue = inputData.value
   var newValue = currentValue.slice(0, -1)
   inputData.value = newValue
 }
+//clear
 function clear2() {
 
   var input = document.getElementById("sci-data")
 
   input.value = ""
 }
-
+//memory functionality
 var memory = 0;
 function addMemory() {
   var currentValue = parseFloat(document.getElementById("sci-data").value);
