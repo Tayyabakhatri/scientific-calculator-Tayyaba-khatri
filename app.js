@@ -112,6 +112,7 @@ function sciInput(num) {
   var inputData = document.getElementById("sci-data")
   inputData.value += inputValue
 }
+
 //sin funtionality
 function sin() {
   var input = document.getElementById("sci-data")
