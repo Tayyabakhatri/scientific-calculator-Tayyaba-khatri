@@ -77,11 +77,24 @@ volumeOffIcon2.addEventListener("click", () => {
   volumeOnIcon2.style.color = "#67656a";
 });
 // displaying outputs
-function input(num) {
-  var inputValue = num.innerText
-  var inputData = document.getElementById("data")
-  inputData.value += inputValue
+function input(num) {  
+  var inputValue = num.innerText;
+  var inputData = document.getElementById("data");
+  
+  // Get the current value in the input
+  var currentValue = inputData.value;
+  
+  // Check if the inputValue is an operator
+  var isOperator = ['+', '-', '*', '/'].includes(inputValue);
+  var lastChar = currentValue.slice(-1);
+  console.log(lastChar)
+  
+  // Only allow operator if last character is not an operator
+  if (!(isOperator && ['+', '-', '*', '/'].includes(lastChar))) {
+      inputData.value += inputValue;
+  }
 }
+
 //showing results
 function result() {
   var inputData = document.getElementById("data")
